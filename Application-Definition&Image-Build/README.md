@@ -8,6 +8,8 @@
 6. **KubeVela** (CNCF Incubating)
 7. **KubeVirt** (CNCF Incubating)
 8. **Operator Framework** (CNCF Incubating)
+<br>
+<br>
 
 # Application Definition & Image Build (애플리케이션 정의 및 이미지 빌드)
 
@@ -21,6 +23,7 @@
      - Chart라는 포맷을 사용해 Kubernetes 리소스들을 패키징 및 배포  
    - **사용 사례**: 여러 클러스터에서 대규모 애플리케이션 배포를 관리할 때 유용합니다.  
    - [Helm 문서](https://helm.sh/docs/)  
+<br>
 
 ### 2. **Artifact Hub** (CNCF Incubating)
 <img src="./image/image-1.png" alt="Artifact Hub" width="100"/>
@@ -32,6 +35,7 @@
      - 오픈 소스 및 상용 프로젝트의 아티팩트도 포함  
    - **사용 사례**: Kubernetes 애플리케이션 배포 시 필요한 다양한 자원을 한곳에서 손쉽게 찾을 수 있습니다.  
    - [Artifact Hub 문서](https://artifacthub.io/docs/)  
+<br>
 
 ### 3. **Backstage** (CNCF Incubating)  
 <img src="./image/image-2.png" alt="Backstage" width="100"/>  
@@ -43,6 +47,7 @@
      - 개발 환경에서 사용되는 다양한 도구들을 중앙에서 관리 가능  
    - **사용 사례**: 다양한 팀과 프로젝트가 있는 대규모 조직에서 개발 툴 관리 및 통합을 필요로 할 때 유용합니다.  
    - [Backstage 문서](https://backstage.io/docs/overview/what-is-backstage)  
+<br>
 
 ### 4. **Buildpacks.io** (CNCF Incubating)
 <img src="./image/image-3.png" alt="Buildpacks.io" width="100"/>  
@@ -54,6 +59,7 @@
      - 소스 코드의 변경 사항을 감지하여 효율적으로 이미지를 빌드  
    - **사용 사례**: DevOps 파이프라인에서 소스 코드부터 컨테이너 이미지 빌드까지 자동화할 때 유용합니다.  
    - [Buildpacks.io 문서](https://buildpacks.io/docs/)  
+<br>
 
 ### 5. **Dapr** (CNCF Incubating)  
 <img src="./image/image-4.png" alt="Dapr" width="100"/>  
@@ -65,6 +71,7 @@
      - 다중 언어 및 프레임워크 지원  
    - **사용 사례**: 마이크로서비스 기반의 분산 애플리케이션을 개발할 때 유용합니다.  
    - [Dapr 문서](https://docs.dapr.io/concepts/overview/)  
+<br>
 
 ### 6. **KubeVela** (CNCF Incubating)  
 <img src="./image/image-5.png" alt="KubeVela" width="100"/>  
@@ -76,6 +83,7 @@
      - Open Application Model(OAM)을 기반으로 개발자 친화적인 인터페이스 제공  
    - **사용 사례**: 개발자가 Kubernetes의 복잡성을 이해하지 않고도 애플리케이션을 쉽게 배포 및 관리할 수 있습니다.  
    - [KubeVela 문서](https://kubevela.io/docs/)  
+<br>
 
 ### 7. **KubeVirt** (CNCF Incubating)  
 <img src="./image/image-6.png" alt="KubeVirt" width="100"/>  
@@ -87,6 +95,7 @@
      - Kubernetes의 네이티브 리소스처럼 VM을 관리 가능  
    - **사용 사례**: 레거시 애플리케이션을 컨테이너화하지 않고도 Kubernetes에서 실행해야 할 때 유용합니다.  
    - [KubeVirt 문서](https://kubevirt.io/)  
+<br>
 
 ### 8. **Operator Framework** (CNCF Incubating)  
 <img src="./image/image-7.png" alt="Operator Framework" width="100"/>  
