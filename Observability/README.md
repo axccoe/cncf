@@ -2,6 +2,7 @@
 1. **Fluentd** (CNCF Graduated)
 2. **Jaeger** (CNCF Graduated)
 3. **Prometheus** (CNCF Graduated)
+4. **Cortex** (CNCF Incubating)
 
 <br>
 
@@ -46,3 +47,17 @@
      - 수평 확장 및 고가용성: Prometheus는 수평 확장 및 고가용성을 지원하는 분산 시스템 모니터링이 목표
    - **사용 사례**: Prometheus는 Kubernetes와 같은 클라우드 네이티브 환경에서 리소스 사용량을 모니터링하거나 메트릭 수집에 사용되며, alertmanager를 통해 임계값 기반 경고를 설정하고 Slack과 같은 채널로 경고를 전송할 수 있습니다.
    - [Prometheus 문서](https://prometheus.io/docs/introduction/overview/)
+
+
+### 4. **Cortex** (CNCF Incubating)  
+<img src="./image/cortex.png" alt="" width="100"/>  
+
+   - **설명**: Cortex는 Prometheus를 위한 수평 확장성, 고가용성, 다중 테넌트, 장기 스토리지 입니다.
+   - **문제 해결**: Prometheus의 여러 문제를 해결하기 위해 설계되어, Prometheus의 확장성, 단기 데이터 문제 해결에 도움을 줍니다.
+   - **특징**  
+     - 수평적 확장성 : Cortex는 클러스터의 여러 머신에서 실행될 수 있어 단일 머신의 처리량과 저장 용량을 능가
+     - 높은 가용성 : 클러스터에서 실행하는 경우 Cortex는 머신 간에 데이터를 복제 가능
+     - 멀티 테넌트 : Cortex는 단일 클러스터에서 여러 개의 서로 다른 독립적인 Prometheus 소스의 데이터와 쿼리를 분리 가능
+     - 장기 저장 : Cortex는 메트릭 데이터의 장기 저장을 위해 S3, GCS, Swift 및 Microsoft Azure를 지원
+   - **사용 사례**: Cortex는 수백 개 이상의 prometheus 서버가 필요한 대규모 모니터링 시스템이나 멀티 테넌트 환경 모니터링, 장기적인 모니터링 시 데이터 저장에 사용되며 kubernetes 환경에 최적화되어 있습니다. 
+   - [Cortex 문서](https://cortexmetrics.io/docs/)
