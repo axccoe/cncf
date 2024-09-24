@@ -1,0 +1,10 @@
+# Application Definition & Image Build (애플리케이션 정의 및 이미지 빌드)
+
+1. **Helm** (CNCF Graduated)
+2. **Artifact Hub** (CNCF Incubating)
+3. **Backstage** (CNCF Incubating)
+4. **Buildpacks.io** (CNCF Incubating)
+5. **Dapr** (CNCF Incubating)
+6. **KubeVela** (CNCF Incubating)
+7. **KubeVirt** (CNCF Incubating)
+8. **Operator Framework** (CNCF Incubating)
