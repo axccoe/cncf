@@ -1,17 +1,17 @@
 # Observability
-1. **Fluentd** (CNCF Graduated)
+1. **Chaos Mesh** (CNCF Graduated)
 <br>
 
 
-### 1. **Fluentd** (CNCF Graduated)  
-<img src="./image/fluentd-logo.png" alt="Helm" width="100"/>  
+### 1. **Chaos Mesh** (CNCF Graduated)  
+<img src="./image/chaos-mesh.png" alt="Helm" width="100"/>  
 
-   - **설명**: Fluentd는 오픈 소스 데이터 수집기로, 데이터 collection과 consumption를 통합하여 데이터를 보다 잘 활용할 수 있게 해줍니다. 보통 로그 수집기로 쓰이며,  로그 데이터를 통합하고, 변환하고, 전송하는 작업을 쉽게 처리할 수 있습니다. 
-   - **문제 해결**: Kubernetes에서의 복잡한 애플리케이션 배포 및 자동화를 단순화하고, 컨테이너화된 애플리케이션의 지속적 통합과 배포를 효율적으로 관리할 수 있습니다.  
+   - **설명**: Chaos Mesh는 오픈소스 Cloud Native Chaos Enginerring 플랫폼입니다. 다양한 유형의 결함(fault) 시뮬레이션을 제공하며 결함 시나리오를 조율하는 기능을 갖고 있습니다. 
+   - **문제 해결**: 예상치 못한 장애 대응 능력 향상, 서비스 복원력 검증에 사용되며, Kubernetes 기반 환경에서 테스트하는 것에 최적화되어 있습니다. 
    - **특징**  
-     - Json을 사용한 통합 로깅 : 가능한 한 Json으로 데이터 구조화하여 로그 데이터 처리의 모든 측면을 통합
-     - pluggable Architecture : 기능을 확장할 수 있는 유연한 플러그인 시스템을 갖춤
-     - 필요 리소스 최소화 : C 언어 + Duby를 조합하여 작성되었으며, 시스템 리소스가 거의 필요하지 않음.
-     - 내장된 신뢰성 : 노드 간 데이터 손실을 방지하기 위해 메모리 및 파일 기반 버퍼링 지원, 강력한 장애 조치, 고가용성 설정 가능
-   - **사용 사례**: Fluentd는 대규모 로그 관리 및 분석 환경에서 특히 유용하며, 클라우드 및 멀티 클라우드 데이터 통합, 데이터 파이프라인으로 널리 사용됩니다. 
-   - [fluentd 문서](https://www.fluentd.org/architecture)
+     - 카오스 실험 시나리오 정의: 다양한 실험을 정의하고, 네트워크 지연, 리소스 부족, 파드 또는 노드 장애 등 여러 카오스 상태를 쉽게 시뮬레이션 가능 
+     - Kubernetes 네이티브: Kubernetes 환경에서 네이티브하게 동작하며, 클러스터 자원을 대상으로 실험을 자동화 가능 
+     - 사용자 친화적 인터페이스: 웹 UI에서 Chaos 시나리오를 쉽게 설계하고 Chaos 실험의 상태를 모니터링 가능 
+     - 관찰가능성 통합 : Prometheus, Grafana 등과 같은 모니터링 툴과 통합되어 실험 결과를 실시간으로 시각화하고 분석 가능 
+   - **사용 사례**: Chaos Mesh는 프로덕션 환경의 안정성 테스트, 애플리케이션 성능 검증에 사용되며 특히 Kubernetes 클러스터에서 실행 중인 컨테이너화된 애플리케이션 테스트에 사용할 수 있습니다. 
+   - [Chaos Mesh 문서](https://chaos-mesh.org/)
