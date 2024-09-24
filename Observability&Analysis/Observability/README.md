@@ -4,6 +4,7 @@
 3. **Prometheus** (CNCF Graduated)
 4. **Cortex** (CNCF Incubating)
 5. **OpenTelemetry** (CNCF Incubating)
+6. **Thanos** (CNCF Incubating)
 
 <br>
 
@@ -76,3 +77,15 @@
      - 자동 계측(Instrumentation) : 애플리케이션의 코드 변경 없이 자동으로 계측하여, 성능 데이터를 수집할 수 있도록 지원
    - **사용 사례**: OpenTelemetry는 표준화된 모니터링 데이터 수집을 제공하여 클라우드 네이티브 및 분산 시스템에서 성능 분석 및 모니터링을 위한 효율적인 관찰 가능성 솔루션으로 사용됩니다. 
    - [OpenTelemetry 문서](https://opentelemetry.io/docs/)
+
+### 6. **Thanos** (CNCF Incubating)  
+<img src="./image/thanos.png" alt="" width="100"/>  
+
+   - **설명**: 오픈 소스 분산 모니터링 시스템을 위해 고가용성 및 확장성을 제공하는 오픈소스 도구로, Prometheus와 통합되어 사용됩니다. 
+   - **문제 해결**: Thanos는 prometheus의 고가용성 문제를 해결하거나, Thanos의 캐시 기능을 활용하여 쿼리 성능 개선에 도움을 줍니다. 
+   - **특징**  
+     - 장기 저장소 : 단기 저장소로 설계된 Prometheus에 대해 Thanos는 객체 저장소(예: S3, GCS)와 통합하여 데이터를 장기간 저장할 수 있도록 지원
+     - 통합된 데이터 제공 : Thanos Querier라는 컴포넌트를 제공하여 여러 Prometheus 인스턴스와 Thanos Store에 저장된 데이터를 단일 쿼리 인터페이스로 조회하여 통합된 데이터를 제공
+     - 고가용성 : 여러 Prometheus 인스턴스를 통합하여 고가용성을 제공하며, 쿼리와 저장을 위한 분산 아키텍처를 지원
+   - **사용 사례**: Thanos는 대규모 클라우드 네이티브 애플리케이션 모니터링 시 Prometheus와 통합하여 사용되거나 장기 데이터를 저장하기 위해 사용됩니다. 
+   - [Thanos 문서](https://thanos.io/tip/thanos/getting-started.md/)
