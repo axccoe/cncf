@@ -1,6 +1,7 @@
 # Observability
 1. **Fluentd** (CNCF Graduated)
 2. **Jaeger** (CNCF Graduated)
+3. **Prometheus** (CNCF Graduated)
 
 <br>
 
@@ -30,3 +31,18 @@
      - 실시간 모니터링 : Jaeger는 애플리케이션의 실시간 트레이스를 제공하여, 요청이 어느 서비스에서 처리되는지 바로 확인
    - **사용 사례**: Jaeger는 마이크로서비스 기반 애플리케이션의 성능 분석, 애플리케이션 의존성 시각화, 분산 시스템의 오류 추적 등에 사용되며 CI/CD에 통합하여 배포 후 성능 모니터링 및 실시간 트레이브 분석을 지원할 수 있습니다.
    - [Jaeger 문서](https://www.jaegertracing.io/docs/1.61/)
+
+### 2. **Prometheus** (CNCF Graduated)  
+<img src="./image/prometheus.png" alt="" width="100"/>  
+
+   - **설명**: Prometheus는 오픈소스 모니터링 및 경고 Toolkit으로 , 주로 시계열 데이터 수집과 알림을 위한 목적으로 사용됩니다. 클라우드 네이티브 환경에서의 시스템 및 애플리케이션 성능 모니터링에 최적화되어 있습니다.
+   - **문제 해결**: 서버, 애플리케이션, 컨테이너 등 실시간 리소스 모니터링, 자동화된 경고 발생, 서비스 가용성 확인에 도움을 줍니다.
+   - **특징**  
+     - 시계열 데이터베이스: Prometheus는 시계열 데이터(time-series data)를 수집 및 저장하며, 각 데이터 포인트는 타임스탬프가 기록 
+     - 강력한 쿼리 언어: PromQL(Prometheus Query Language)을 사용하여 수집된 데이터를 효율적으로 분석하고 시각화 
+     - 다양한 메트릭 수집: 애플리케이션, 서버, 컨테이너 등 다양한 소스에서 메트릭(metric)을 수집
+     - 푸시 대신 풀 방식: Prometheus는 푸시 방식이 아닌 풀(Pull) 방식으로 타겟에서 메트릭을 주기적으로 스크래핑하여 데이터를 수집
+     - 알림 관리: Alertmanager와 통합하여 임계값에 도달했을 때 경고 메시지를 발송 가능 
+     - 수평 확장 및 고가용성: Prometheus는 수평 확장 및 고가용성을 지원하는 분산 시스템 모니터링이 목표
+   - **사용 사례**: Prometheus는 Kubernetes와 같은 클라우드 네이티브 환경에서 리소스 사용량을 모니터링하거나 메트릭 수집에 사용되며, alertmanager를 통해 임계값 기반 경고를 설정하고 Slack과 같은 채널로 경고를 전송할 수 있습니다.
+   - [Prometheus 문서](https://prometheus.io/docs/introduction/overview/)
