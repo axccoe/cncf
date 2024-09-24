@@ -32,7 +32,7 @@
    - **사용 사례**: Jaeger는 마이크로서비스 기반 애플리케이션의 성능 분석, 애플리케이션 의존성 시각화, 분산 시스템의 오류 추적 등에 사용되며 CI/CD에 통합하여 배포 후 성능 모니터링 및 실시간 트레이브 분석을 지원할 수 있습니다.
    - [Jaeger 문서](https://www.jaegertracing.io/docs/1.61/)
 
-### 2. **Prometheus** (CNCF Graduated)  
+### 3. **Prometheus** (CNCF Graduated)  
 <img src="./image/prometheus.png" alt="" width="100"/>  
 
    - **설명**: Prometheus는 오픈소스 모니터링 및 경고 Toolkit으로 , 주로 시계열 데이터 수집과 알림을 위한 목적으로 사용됩니다. 클라우드 네이티브 환경에서의 시스템 및 애플리케이션 성능 모니터링에 최적화되어 있습니다.
