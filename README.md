@@ -22,3 +22,52 @@ CNCF (Cloud Native Computing Foundation)의 Landscape에서 "Graduated" 및 "Inc
 
 해당 이미지는 CNCF 에서 "Graduated" 및 "Incubating" 단계를 부여받은 프로젝트 입니다.  
 
+CNCF Landscape는 다양한 기능을 제공하는 프로젝트들로 구성되어 있으며, 아래와 같이 5개의 대분류와 그 하위의 20개의 중분류로 나눌 수 있습니다.
+
+## 1. Application Definition & Image Build
+### App Definition and Development: Kubernetes 애플리케이션 정의 및 개발을 위한 도구
+- Helm, Artifact Hub, Backstage, Buildpacks.io, Dapr, KubeVela, KubeVirt, Operator Framework
+<br>
+
+## 2. Orchestration & Management
+### Scheduling & Orchestration: 애플리케이션의 스케줄링 및 오케스트레이션을 담당하는 도구
+- KEDA, Kubernetes, Crossplane, Karmada, Knative, Volcano
+### Service Mesh: 마이크로서비스 간의 네트워크 트래픽을 관리하는 도구
+- Istio, Linkerd
+### Coordination & Service Discovery: 클러스터 내 서비스의 발견 및 조정 기능을 제공하는 도구
+- CoreDNS, etcd
+### Remote Procedure Call (RPC): 네트워크 통신을 위한 원격 프로시저 호출 기능을 제공하는 도구
+- gRPC
+### Service Proxy: 네트워크 트래픽을 처리하는 프록시 서버 도구
+- Envoy, Contour
+### API Gateway: API 게이트웨이 역할을 하는 도구
+- Emissary Ingress
+<br>
+
+## 3. Runtime
+### Cloud Native Storage: 클라우드 네이티브 환경에서의 스토리지 관리 도구
+- Rook, CubeFS, Longhorn
+### Container Runtime: 컨테이너를 실행하는 런타임 환경을 제공하는 도구
+- containerd, CRI-O
+### Cloud Native Network: 네트워크 통신을 관리하는 도구
+- Cilium, CNI
+<br>
+
+## 4. Provisioning
+### Security & Compliance: 클라우드 네이티브 환경에서 보안 및 컴플라이언스를 관리하는 도구
+- Falco, Open Policy Agent (OPA), The Update Framework (TUF), in-toto, Kyverno, Keycloak
+### Automation & Configuration: 자동화 및 설정 관리를 위한 도구
+- Cloud Custodian, KubeEdge
+### Container Registry: 컨테이너 이미지를 관리하는 레지스트리
+- Harbor, Dragonfly
+### Key Management: 키 관리와 관련된 도구
+- SPIFFE, SPIRE
+<br>
+
+## 5.Observability & Analysis
+### Observability: 클러스터와 애플리케이션의 상태를 모니터링하고 분석하는 도구
+- Fluentd, Jaeger, Prometheus, Cortex, OpenTelemetry, Thanos
+### Chaos Engineering: 카오스 엔지니어링을 통해 시스템 복원력을 테스트하는 도구
+- Chaos Mesh, Litmus
+### Feature Flagging: 피처 플래깅을 위한 도구
+- OpenFeature
