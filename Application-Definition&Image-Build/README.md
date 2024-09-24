@@ -11,7 +11,7 @@
 
 # Application Definition & Image Build (애플리케이션 정의 및 이미지 빌드)
 
-1. **Helm** (CNCF Graduated)  
+### 1. **Helm** (CNCF Graduated)  
 <img src="./image/image.png" alt="Helm" width="100"/>  
 
    - **설명**: Helm은 Kubernetes 애플리케이션을 정의, 설치 및 업그레이드하는 패키지 매니저입니다.  
@@ -22,7 +22,7 @@
    - **사용 사례**: 여러 클러스터에서 대규모 애플리케이션 배포를 관리할 때 유용합니다.  
    - [Helm 문서](https://helm.sh/docs/)  
 
-2. **Artifact Hub** (CNCF Incubating)
+### 2. **Artifact Hub** (CNCF Incubating)
 <img src="./image/image-1.png" alt="Artifact Hub" width="100"/>
 
    - **설명**: Artifact Hub는 Helm 차트, OLM 번들, Falco 규칙 등 클라우드 네이티브 아티팩트를 찾고 관리할 수 있는 중앙 저장소입니다.  
@@ -33,7 +33,7 @@
    - **사용 사례**: Kubernetes 애플리케이션 배포 시 필요한 다양한 자원을 한곳에서 손쉽게 찾을 수 있습니다.  
    - [Artifact Hub 문서](https://artifacthub.io/docs/)  
 
-3. **Backstage** (CNCF Incubating)  
+### 3. **Backstage** (CNCF Incubating)  
 <img src="./image/image-2.png" alt="Backstage" width="100"/>  
 
    - **설명**: Backstage는 개발자를 위한 오픈 플랫폼으로, 소프트웨어 인프라와 툴을 통합하여 효율적인 개발 환경을 제공합니다.  
@@ -44,7 +44,7 @@
    - **사용 사례**: 다양한 팀과 프로젝트가 있는 대규모 조직에서 개발 툴 관리 및 통합을 필요로 할 때 유용합니다.  
    - [Backstage 문서](https://backstage.io/docs/overview/what-is-backstage)  
 
-4. **Buildpacks.io** (CNCF Incubating)
+### 4. **Buildpacks.io** (CNCF Incubating)
 <img src="./image/image-3.png" alt="Buildpacks.io" width="100"/>  
 
    - **설명**: Buildpacks.io는 소스 코드를 자동으로 컨테이너 이미지로 변환해주는 도구입니다.  
@@ -55,7 +55,7 @@
    - **사용 사례**: DevOps 파이프라인에서 소스 코드부터 컨테이너 이미지 빌드까지 자동화할 때 유용합니다.  
    - [Buildpacks.io 문서](https://buildpacks.io/docs/)  
 
-5. **Dapr** (CNCF Incubating)  
+### 5. **Dapr** (CNCF Incubating)  
 <img src="./image/image-4.png" alt="Dapr" width="100"/>  
 
    - **설명**: Dapr은 클라우드 네이티브 애플리케이션을 개발할 때 반복적인 패턴을 처리하는 분산 런타임입니다.  
@@ -66,7 +66,7 @@
    - **사용 사례**: 마이크로서비스 기반의 분산 애플리케이션을 개발할 때 유용합니다.  
    - [Dapr 문서](https://docs.dapr.io/concepts/overview/)  
 
-6. **KubeVela** (CNCF Incubating)  
+### 6. **KubeVela** (CNCF Incubating)  
 <img src="./image/image-5.png" alt="KubeVela" width="100"/>  
 
    - **설명**: KubeVela는 Kubernetes 기반 애플리케이션을 선언적으로 관리할 수 있는 플랫폼입니다.  
@@ -77,7 +77,7 @@
    - **사용 사례**: 개발자가 Kubernetes의 복잡성을 이해하지 않고도 애플리케이션을 쉽게 배포 및 관리할 수 있습니다.  
    - [KubeVela 문서](https://kubevela.io/docs/)  
 
-7. **KubeVirt** (CNCF Incubating)  
+### 7. **KubeVirt** (CNCF Incubating)  
 <img src="./image/image-6.png" alt="KubeVirt" width="100"/>  
 
    - **설명**: KubeVirt는 가상 머신(VM)을 Kubernetes 클러스터 내에서 실행할 수 있게 해주는 도구입니다.  
@@ -88,8 +88,9 @@
    - **사용 사례**: 레거시 애플리케이션을 컨테이너화하지 않고도 Kubernetes에서 실행해야 할 때 유용합니다.  
    - [KubeVirt 문서](https://kubevirt.io/)  
 
-8. **Operator Framework** (CNCF Incubating)  
+### 8. **Operator Framework** (CNCF Incubating)  
 <img src="./image/image-7.png" alt="Operator Framework" width="100"/>  
+
    - **설명**: Operator Framework는 Kubernetes에서 복잡한 애플리케이션을 쉽게 관리할 수 있도록 도와주는 툴셋입니다.  
    - **문제 해결**: Kubernetes에서 상태 저장 애플리케이션의 수명 주기 관리 문제를 해결합니다.  
    - **특징**  
