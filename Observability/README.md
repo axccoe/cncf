@@ -4,7 +4,7 @@
 
 
 ### 1. **Fluentd** (CNCF Graduated)  
-<img src="./image/fluentd.png" alt="Helm" width="50%"/>  
+<img src="./image/fluentd.png" alt="Helm" width="100"/>  
 
    - **설명**: Fluentd는 오픈 소스 데이터 수집기로, 데이터 collection과 consumption를 통합하여 데이터를 보다 잘 활용할 수 있게 해줍니다. 보통 로그 수집기로 쓰이며,  로그 데이터를 통합하고, 변환하고, 전송하는 작업을 쉽게 처리할 수 있습니다. 
    - **문제 해결**: Kubernetes에서의 복잡한 애플리케이션 배포 및 자동화를 단순화하고, 컨테이너화된 애플리케이션의 지속적 통합과 배포를 효율적으로 관리할 수 있습니다.  
