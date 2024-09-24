@@ -3,6 +3,7 @@
 2. **Jaeger** (CNCF Graduated)
 3. **Prometheus** (CNCF Graduated)
 4. **Cortex** (CNCF Incubating)
+5. **OpenTelemetry** (CNCF Incubating)
 
 <br>
 
@@ -61,3 +62,17 @@
      - 장기 저장 : Cortex는 메트릭 데이터의 장기 저장을 위해 S3, GCS, Swift 및 Microsoft Azure를 지원
    - **사용 사례**: Cortex는 수백 개 이상의 prometheus 서버가 필요한 대규모 모니터링 시스템이나 멀티 테넌트 환경 모니터링, 장기적인 모니터링 시 데이터 저장에 사용되며 kubernetes 환경에 최적화되어 있습니다. 
    - [Cortex 문서](https://cortexmetrics.io/docs/)
+
+### 5. **OpenTelemetry** (CNCF Incubating)  
+<img src="./image/opentelemetry.png" alt="" width="100"/>  
+
+   - **설명**: OTel이라고도 불리는 OpenTelemetry는 trace , 메트릭 , 로그와 같은 원격 측정 데이터를 계측, 생성, 수집 및 내보내기 위한  벤더 독립적인 오픈 소스 Observability 프레임워크입니다 . 오픈소스와 상용 제품을 포함한 광범위한 Observability 백엔드와 함께 사용할 수 있습니다.  
+   - **문제 해결**: OpenTelemetry는 기존에 트레이스, 메트릭, 로그를 각각 다른 도구로 관리하던 문제를 해결하고, 이를 단일 프레임워크로 통합하여 관리할 수 있도록 합니다.
+   - **특징**  
+     - 다중 signal 지원 : 트레이스(Trace), 메트릭(Metric), 로그(Log)를 수집하며, 이를 통해 분산 시스템의 성능과 상태를 종합적으로 모니터링
+     - 광범위한 언어 지원 : 다양한 프로그래밍 언어(Java, Python, Go, C#, JavaScript 등)를 지원하여, 여러 언어로 작성된 애플리케이션에서도 동일한 방법으로 관찰 가능성을 구현 가능 
+     - 플러그인 기반 아키텍처 : 플러그인 시스템을 통해 다양한 백엔드 서비스(예: Jaeger, Prometheus, Datadog 등)와 쉽게 통합 가능 
+     - 통합된 API 및 SDK : 모든 sigmal(Trace, Metric, Log)를 위한 일관된 API와 SDK를 제공하여, 사용자는 간단히 OpenTelemetry 라이브러리를 사용해 데이터 수집 가능 
+     - 자동 계측(Instrumentation) : 애플리케이션의 코드 변경 없이 자동으로 계측하여, 성능 데이터를 수집할 수 있도록 지원
+   - **사용 사례**: OpenTelemetry는 표준화된 모니터링 데이터 수집을 제공하여 클라우드 네이티브 및 분산 시스템에서 성능 분석 및 모니터링을 위한 효율적인 관찰 가능성 솔루션으로 사용됩니다. 
+   - [OpenTelemetry 문서](https://opentelemetry.io/docs/)
