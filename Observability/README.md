@@ -18,7 +18,7 @@
    - **사용 사례**: Fluentd는 대규모 로그 관리 및 분석 환경에서 특히 유용하며, 클라우드 및 멀티 클라우드 데이터 통합, 데이터 파이프라인으로 널리 사용됩니다. 
    - [fluentd 문서](https://www.fluentd.org/architecture)
 
-### 1. **Jaeger** (CNCF Graduated)  
+### 2. **Jaeger** (CNCF Graduated)  
 <img src="./image/Jaeger.png" alt="" width="100"/>  
 
    - **설명**: Jaeger는 오픈소스 분산 추적 플랫폼으로 마이크로서비스 기반 애플리케이션의 성능 및 트랜잭션 분석을 위해 설계되었습니다. 특히, 트랜잭션의 흐름을 시각적으로 추적하고, 병목 현상과 같은 성능 문제를 해결하는 데 유용합니다.
