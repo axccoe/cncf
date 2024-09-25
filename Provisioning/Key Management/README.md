@@ -1,5 +1,6 @@
 # Key Management
 1. **Spiffe** (CNCF Graduated)
+2. **Spiire** (CNCF Graduated)
 
 <br>
 
@@ -16,3 +17,16 @@
      - 확장성 : 클라우드, 컨테이너, VM, 온프레미스 등 다양한 환경에서 사용 가능하며, 특히 분산 환경에서의 사용에 최적화
    - **사용 사례**: 암호화 ID 문서를 관리하고 발급하는 오버헤드 관련 비용을 크게 줄이고 개발 및 배포를 가속화할 수 있습니다. 주요 사용 사례로는 서비스 매쉬 환경에서의 인증, 제로 트러스트 아키텍처 구현이 있습니다. 
    - [Spiffe 문서](https://spiffe.io/docs/latest/spiffe-about/overview/)
+
+### 2. **Spire** (CNCF Graduated)  
+<img src="./image/spire.png" alt="" width="100"/>  
+
+   - **설명**: SPIRE는 SPIFFE API를 프로덕션에 바로 적용할 수 있도록 구현한 것으로, 노드 및 워크로드 증명을 수행하여 워크로드에 SVID를 안전하게 발급하고, 사전 정의된 조건 집합에 따라 다른 워크로드의 SVID를 검증합니다.
+   - **문제 해결**: 동적 인프라에서 실제로 SPIFFE 표준에 따라 SPIFFE ID를 발급하고 관리하며, 정책 기반으로 어떤 서비스가 어떤 신원을 받아야 하는지 관리하고, 이를 통해 자동화된 인증서 발급 및 갱신을 처리합니다.
+   - **특징**  
+     - 분산 아키텍처 : SPIRE는 중앙화된 SPIRE 서버와 각 노드에 위치한 SPIRE 에이전트로 구성되어 있으며, 이를 통해 확장 가능한 ID 및 인증 관리 시스템을 제공
+     - 다양한 플랫폼 통합 : Kubernetes, AWS, GCP, VM 등 다양한 인프라와 통합할 수 있으며, 각각의 환경에서 서비스의 ID 발급과 관리가 가능
+     - 서비스 메쉬 지원 : Istio, Linkerd와 같은 서비스 메쉬 솔루션과 통합하여 서비스 간의 안전한 인증 및 통신을 제공합니다.
+     - 플러그인 아키텍처 :  SPIRE는 플러그인 시스템을 통해 다양한 인증 및 스토리지 백엔드와 쉽게 통합할 수 있도록 유연성을 제공합니다.
+   - **사용 사례**: Spire는 mTLS를 사용하여 신뢰할 수 없는 네트워크에서 workload 인증, JWT 기반 인증을 사용하여 두 workload 인증에 사용됩니다. 
+   - [Spire 문서](https://spiffe.io/docs/latest/spire-about/)
