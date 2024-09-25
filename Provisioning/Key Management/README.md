@@ -1,6 +1,6 @@
 # Key Management
 1. **Spiffe** (CNCF Graduated)
-2. **Spiire** (CNCF Graduated)
+2. **Spire** (CNCF Graduated)
 
 <br>
 
