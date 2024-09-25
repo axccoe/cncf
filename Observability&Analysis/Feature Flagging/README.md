@@ -1,4 +1,4 @@
-# Observability
+# Feature Flagging
 1. **OpenFeature** (CNCF Incubating)
 
 <br>

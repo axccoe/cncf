@@ -1,4 +1,4 @@
-# Key Management
+# Container Registry
 1. **Harbor** (CNCF Graduated)
 2. **Dragonfly** (CNCF Incubating)
 <br>
