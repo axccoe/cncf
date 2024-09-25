@@ -36,8 +36,7 @@
      - 다양한 프로토콜 지원: CubeFS는 S3, POSIX, HDFS와 호환되며, 프로토콜 간의 상호 운용성 제공  
      - 데이터 일관성 보장: 멀티 레벨 캐싱과 강력한 복제 프로토콜을 통해 데이터의 강력한 일관성을 보장  
    - **사용 사례**: CubeFS는 대규모 데이터 저장과 처리가 필요한 클라우드 네이티브 워크로드에서 사용되며, 파일 기반 애플리케이션 및 빅데이터 처리 시스템에 적합합니다.  
-   - [CubeFS 문서](https://cubefs.io/docs/master/overview/introduction.html)
-   )  
+   - [CubeFS 문서](https://cubefs.io/docs/master/overview/introduction.html)  
 <br>
 
 ### 3. **Longhorn** (CNCF Incubating)  
@@ -52,6 +51,5 @@
      - 다중 복제 및 스케줄링: 각 볼륨의 복제본 수를 설정하고, 여러 노드에 복제본을 스케줄링하여 고가용성 보장
   
    - **사용 사례**: Longhorn는 데이터 보호 및 복구가 중요한 Kubernetes 클러스터에서 사용되며, 클라우드 네이티브 애플리케이션의 분산 블록 스토리지를 관리하는 데 적합합니다.  
-   - [Longhorn 문서](https://longhorn.io/docs/1.7.1/what-is-longhorn)
-   )  
+   - [Longhorn 문서](https://longhorn.io/docs/1.7.1/what-is-longhorn)   
 <br>
