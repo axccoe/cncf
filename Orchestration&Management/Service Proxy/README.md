@@ -35,5 +35,5 @@
      - 동적 재구성: 트래픽 규칙을 실시간으로 업데이트할 수 있으며, Kubernetes 클러스터 내 서비스 변경 사항에 유연하게 대응  
      - TLS 관리 및 보안: TLS 인증서를 자동으로 관리하고 갱신하여 보안 정책을 쉽게 적용  
    - **사용 사례**: Contour는 Kubernetes 클러스터에서 Ingress 컨트롤러로 사용되어 HTTP 및 HTTPS 트래픽을 효율적으로 처리하고, Envoy의 성능을 활용하여 서비스 간 트래픽을 안전하고 효과적으로 관리하는 데 사용됩니다. 특히 멀티팀 Kubernetes 클러스터에서 Ingress 설정을 관리할 때 유용합니다.  
-   - [Contour 문서](https://projectcontour.io/docs/1.30/﻿)  
+   - [Contour 문서](https://projectcontour.io/docs/1.30/)  
 <br>
