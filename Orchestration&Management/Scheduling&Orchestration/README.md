@@ -13,7 +13,7 @@
 
 
 ### 1. **Kubernetes** (CNCF Graduated)  
-<img src="./image/image.png" alt="Helm" width="100"/>  
+<img src="./image/image.png" alt="Kubernetes" width="100"/>  
 
    - **설명**: Kubernetes는 컨테이너화된 애플리케이션을 자동으로 배포, 관리, 스케일링하는 오픈소스 플랫폼으로, 클라우드 네이티브 인프라의 핵심적인 역할을 합니다.  
    - **문제 해결**: 컨테이너 기반 애플리케이션의 복잡한 배포와 스케일링, 그리고 관리의 어려움을 해결합니다.  
@@ -26,7 +26,7 @@
 <br>
 
 ### 2. **Crossplane** (CNCF Incubating)  
-<img src="./image/image-1.png" alt="Helm" width="100"/>  
+<img src="./image/image-1.png" alt="Crossplane" width="100"/>  
 
    - **설명**: Crossplane은 Kubernetes에서 인프라를 관리하는 오픈소스 프로젝트로, 클라우드 및 온프레미스 리소스를 Kubernetes API를 통해 관리할 수 있게 합니다.  
    - **문제 해결**: 클라우드 네이티브 환경에서 인프라 관리를 통합하고, 개발자가 익숙한 Kubernetes API로 인프라와 애플리케이션을 함께 관리할 수 있도록 합니다.  
@@ -39,7 +39,7 @@
 <br>
 
 ### 3. **Karmada** (CNCF Incubating)  
-<img src="./image/image-2.png" alt="Helm" width="100"/>  
+<img src="./image/image-2.png" alt="Karmada" width="100"/>  
 
    - **설명**: Karmada는 Kubernetes 기반의 멀티 클러스터 관리를 위한 오픈소스 프로젝트로, 여러 Kubernetes 클러스터를 중앙에서 통합 관리할 수 있게 해줍니다.  
    - **문제 해결**: 멀티 클러스터 환경에서 중앙화된 관리와 애플리케이션의 글로벌 배포 문제를 해결합니다.  
@@ -53,7 +53,7 @@
 <br>
 
 ### 4. **Knative** (CNCF Incubating)  
-<img src="./image/image-3.png" alt="Helm" width="100"/>  
+<img src="./image/image-3.png" alt="Knative" width="100"/>  
 
    - **설명**: Knative는 Kubernetes 위에서 서버리스 워크로드를 쉽게 배포하고 관리할 수 있도록 설계된 오픈소스 플랫폼입니다. 서버리스 애플리케이션의 개발과 관리를 간소화합니다.  
    - **문제 해결**: 서버리스 애플리케이션의 배포, 스케일링 및 관리를 간소화하여 서버 관리의 복잡성을 줄입니다.  
@@ -67,7 +67,7 @@
 <br>
 
 ### 5. **Volcano** (CNCF Incubating)  
-<img src="./image/image-4.png" alt="Helm" width="100"/>  
+<img src="./image/image-4.png" alt="Volcano" width="100"/>  
 
    - **설명**: Volcano는 Kubernetes 상에서 고성능 컴퓨팅(HPC) 워크로드를 관리하고 스케줄링하는 오픈소스 프로젝트입니다. HPC 애플리케이션을 최적화하여 실행할 수 있도록 설계되었습니다.  
    - **문제 해결**: 데이터 과학, 머신러닝, 고성능 컴퓨팅 워크로드를 Kubernetes에서 관리할 때의 스케줄링 복잡성을 해결합니다.  
