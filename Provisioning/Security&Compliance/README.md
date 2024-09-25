@@ -1,7 +1,8 @@
 # Key Management
 1. **Falco** (CNCF Graduated)
 2. **OPA** (CNCF Graduated)
-2. **TUF** (CNCF Graduated)
+3. **TUF** (CNCF Graduated)
+4. **cert-manager** (CNCF Incubating)
 
 <br>
 
@@ -46,3 +47,15 @@
      - 자동 롤백 : 업데이트가 실패하거나 문제가 발생할 경우, TUF는 자동으로 이전 안전한 버전으로 롤백할 수 있는 기능을 제공  
    - **사용 사례**: 사용자에게 영향을 미치는 많은 유형의 키 및 저장소/레지스트리 손상을 방지하며 안전한 패키지 업데이르를 제공합니다. 손상에서 복구할 수 있는 안전한 방법을 제공합니다. 12년의 실무 경험, 약 12건의 보안 감사, 6건 정도의 심사를 거친 논문, 프로덕션에서 사용된 6건 정도의 구현, 수백만 개의 컨테이너 등이 보안되었습니다.
    - [TUF 문서](https://theupdateframework.io/overview/)
+
+### 4. **cert-manager** (CNCF Incubating)  
+<img src="./image/cmg.png" alt="" width="100"/>  
+
+   - **설명**: cert-manager는 Kubernetes 및 OpenShift 워크로드를 위한 강력하고 확장 가능한 X.509 인증서 컨트롤러입니다. 인기 있는 공개 발급자와 비공개 발급자 모두 다양한 발급자로부터 인증서를 얻고 인증서가 유효하고 최신 상태인지 확인하고 만료되기 전에 구성된 시간에 인증서를 갱신하려고 시도합니다.
+   - **문제 해결**: cert-manager를 사용하여 TLS 인증서를 자동으로 관리함으로써 보안 수준을 높이고 안전항 통신을 보장합니다. 또한 수동의 번거로움을 덜어주고 자동화하여 운영 효율성을 높입니다. 인증서와 관련된 활동을 Kubernetes CRDs로 관리함으로써 관리가 용이해집니다. 
+     - 자동 인증서 발급 : cert-manager는 Let’s Encrypt, HashiCorp Vault, AWS Certificate Manager 등 다양한 인증서 발급 서비스를 지원하여 자동으로 TLS 인증서를 발급 가능
+     - 자동 갱신 : 발급된 인증서는 정해진 기간이 지나면 만료되기 때문에 cert-manager는 인증서를 자동으로 갱신
+     - Kubernetes 리소스 통합 : cert-manager는 Kubernetes Custom Resource Definitions (CRDs)을 사용하여 인증서, 발급자, 인증서 서명 요청(Certificate Signing Request) 등을 관리
+     - 유연한 정책 설정 : 다양한 인증서 발급 정책을 설정할 수 있어, 환경에 맞는 맞춤형 관리가 가능
+   - **사용 사례**: 수동 인증서 관리란 발생을 기다리는 중단입니다. 잊어버린 갱신 한 번만 해도 전체 사이트가 다운됩니다. 따라서 자동화는 안정성의 핵심이며, cert-manager는 Kubernetes에서 이를 달성하기 위한 가장 중요한 도구입니다. 또한 서비스 메시와 같은 워크로드에는 로컬 인증 기관이 필요할 수 있으며, cert-manager는 인프라의 이러한 핵심 부분을 발급하고 제어하는 데 도움이 될 수 있습니다.
+   - [cert-manager 문서](https://cert-manager.io/docs/)
