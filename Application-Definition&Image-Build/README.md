@@ -1,4 +1,4 @@
-# 1. Application Definition & Image Build  
+# Application Definition & Image Build  
 
 클라우드 네이티브 애플리케이션의 정의 및 이미지를 빌드하기 위한 도구들입니다. 이러한 도구들은 애플리케이션의 구조를 정의하고, 컨테이너 이미지를 빌드하며, 애플리케이션 배포를 준비하는 역할을 수행합니다.  
 
