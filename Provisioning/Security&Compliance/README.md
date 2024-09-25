@@ -5,6 +5,7 @@
 4. **cert-manager** (CNCF Incubating)
 5. **in-toto** (CNCF Incubating)
 6. **Keycloak** (CNCF Incubating)  
+7. **Kyverno** (CNCF Incubating)  
 
 <br>
 
@@ -90,3 +91,15 @@
    - **사용 사례**: Keycloak은 내장된 클라우드 네이티브 ID 및 액세스 제어 표준을 제공합니다. 애플리케이션의 보안 측면을 Keycloak에 위임함으로써 개발자는 다양한 인증 메커니즘에 대해 걱정하거나 암호화에 대해 이해하거나 비밀번호를 안전하게 저장하는 방법에 대해 걱정할 필요가 없습니다. 개발자는 OAuth2, OpenID Connect, WebAuthn, SAML2 기반 IDP, LDAP 서버, Kerberos/SPNEGO와 같은 최신 인증 및 권한 부여 프로토콜을 활용할 수 있습니다. Keycloak은 인프라 팀과 클라우드 네이티브 개발자가 통합된 보안 표준을 통해 클라우드 네이티브 스택 기술을 보호하여 사용자에게 사용성, 확장성 및 보안에 중점을 둔 클라우드 친화적인 경험을 제공할 수 있도록 합니다.
    - [keycloak 문서](https://www.keycloak.org/)
 
+### 7. **Kyverno** (CNCF Incubating)  
+<img src="./image/kyverno.png" alt="" width="100"/>  
+
+   - **설명**: Kyverno는 kubernetes를 위해 설계된 정책 엔진입니다. 정책은 리소스로 관리되며 새로운 언어를 학습할 필요가 없습니다. kubectl, git, kustomize를 사용하여 정책을 관리합니다. 
+   - **문제 해결**: Kyverno는 kubernetes 내에서 Pod 보안 표준을 준수하도로고 정책을 적용하여 허가되지 않은 이미지 사용 및 과도한 권한을 가진 Pod의 배포를 차단할 수 있습니다. 뿐만 아니라, 정책을 IaC 형태로 관리할 수 있으며, 거버넌스 표준 준수, 소프트웨어 공급망 보호에 도움을 줍니다. 
+   - **특징**  
+     - Kubernetes 네이티브 정책 관리 : Kyverno는 Kubernetes 리소스로서 정책을 정의하므로, 추가적인 언어나 도구가 필요 없이 YAML 파일을 사용하여 정책을 관리 가능 
+     - 소프트웨어 공급망 보안 : Kyverno는 컨테이너 이미지의 무결성을 확인하고, 이미지 메타데이터를 검사하여 소프트웨어 공급망의 보안을 강화 가능 
+     - 이미지 메타데이터 검사 : Kyverno는 레지스트리에서 가져온 이미지의 메타데이터를 확인하여 정책 위반 여부를 검사하고 이를 기준으로 배포 여부를 결정
+     - 셀프 서비스 보고 및 예외 처리 : 독점적인 감사 로그 없이 셀프 서비스 보고 기능을 제공하며, 필요 시 정책 예외를 설정 가능 
+   - **사용 사례**: Kyverno를 통한 정책 및 거버넌스는 잘못된 구성을 제거하고 보안 모범 사례를 홍보하여 보안 태세를 개선합니다. 또한 개발자, 보안 및 운영 문제를 분리하여 비즈니스 민첩성을 지원하고 셀프 서비스 자동화를 지원합니다. 마지막으로 클라우드 비용을 관리하고 최적화하여 운영 효율성을 높입니다.
+   - [Kyverno 문서](https://kyverno.io/docs/introduction/)
